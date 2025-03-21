@@ -6,9 +6,9 @@ const quotesList =
     "If you skillfully follow the multidisciplinary path, you will never wish to come back. It would be like cutting off your hands."
 ]
 
-function generateQuote()
-{
-    document.getElementById("test").innerHTML = quotesList[2];
+function generateQuote() {
+    const randomQuote = quotesList[Math.floor(Math.random() * quotesList.length)];
+    document.getElementById("test").innerHTML = randomQuote;
 }
 
 // store quotes (for now) in a list or array and use a rand function to display array[3] etc
