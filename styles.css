@@ -1,0 +1,30 @@
+h1 {
+    font-family: Nunito;
+    text-align: center;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+p {
+    font-family: Nunito;
+}
+
+button {
+    font-family: Nunito;
+    font-weight: bold;
+    background-color: #04AA6D;
+    padding: 5px;
+    border-radius: 8px;
+    display: block; 
+    margin: 0 auto; 
+}
+
+button:hover {
+    background-color: #038857; 
+    cursor: pointer; 
+    transform: scale(1.05); 
+    transition: all 0.3s;
+}
