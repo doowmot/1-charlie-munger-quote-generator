@@ -4,14 +4,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie Munger Quote Generator</title>
   </head>
   <body>
-    <h1>Charlie Munger Quote Generator</h1>
-    <div>
-        <button onclick="generateQuote()">Generate Quote</button>
-        <p id="test"> </p>
+    <div class="container">
+      <h1>Charlie Munger Quote Generator</h1>
+      
+      <div class="charlie-img-container">
+        <img src="charlie-munger.jpg" alt="Charlie Munger" class="charlie-img" onerror="this.src='https://via.placeholder.com/150?text=Charlie+Munger'">
+      </div>
+      
+      <div class="quote-container">
+        <p id="test">Click the button to generate a quote from Charlie Munger.</p>
+        <p class="author">- Charlie Munger</p>
+      </div>
+      
+      <button onclick="generateQuote()">Generate Quote</button>
     </div>
+
+    <footer>Project 1/n - JavaScript Learning Journey</footer>
+    
     <script src="script.js"></script>
   </body>
 </html>
