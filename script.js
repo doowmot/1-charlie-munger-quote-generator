@@ -1,4 +1,3 @@
-
 const quotesList = 
 [
     "Spend each day trying to be a little wiser than you were when you woke up. Discharge your duties faithfully and well. Systematically you get ahead, but not necessarily in fast spurts. Nevertheless, you build discipline by preparing for fast spurts. Slug it out one inch at a time, day by day. At the end of the day – if you live long enough – most people get what they deserve.",
@@ -11,7 +10,18 @@ const quotesList =
     "Take a simple idea, and take it seriously."
 ]
 
+let remainingQuotes = [...quotesList];
+
 function generateQuote() {
-    const randomQuote = quotesList[Math.floor(Math.random() * quotesList.length)];
-    document.getElementById("test").innerHTML = randomQuote;
+    if (remainingQuotes.length === 0) {
+        remainingQuotes = [...quotesList];
+    }
+    
+    const randomPosition = Math.floor(Math.random() * remainingQuotes.length);
+    
+    const selectedQuote = remainingQuotes[randomPosition];
+    
+    remainingQuotes.splice(randomPosition, 1);
+    
+    document.getElementById("quote-display").innerHTML = selectedQuote;
 }
