@@ -34,11 +34,13 @@ border: 6px solid #04AA6D;
 }
 
 .quote-container {
-background-color: #f2f7f3;
+background-color: #f7f8f8;
 border-left: 5px solid #04AA6D;
 padding: 20px;
 text-align: left;
-min-height: 100px;
+min-height: 160px;
+display: flex;
+align-items: center;
 }
 
 #quote-display {
