@@ -25,3 +25,35 @@ function generateQuote() {
     
     document.getElementById("quote-display").innerHTML = selectedQuote;
 }
+
+function copyQuote() {
+  let quoteText = document.getElementById("quote-display").textContent;
+  
+  navigator.clipboard.writeText(quoteText);
+  
+  const buttonText = document.querySelector("button:nth-of-type(2) .button-text");
+  const originalText = buttonText.textContent;
+  buttonText.textContent = "Copied!";
+  
+  setTimeout(() => {
+    buttonText.textContent = originalText;
+  }, 1500);
+}
+
+function shareQuote() {
+    const quoteText = document.getElementById("quote-display").textContent;
+    const shareData = {
+      title: 'Charlie Munger Quote',
+      text: quoteText + ' - Charlie Munger',
+      url: window.location.href
+    };
+    
+    if (navigator.share) {
+      navigator.share(shareData)
+        .catch(err => console.error('Error sharing:', err));
+    } else {
+
+      alert("Your browser doesn't support sharing. Try copying the quote instead.");
+    }
+  }
+
