@@ -7,7 +7,24 @@ const quotesList =
     "I try to get rid of people who always confidently answer questions about which they don’t have any real knowledge.",
     "The iron rule of nature is: You get what you reward for. If you want ants to come, you put sugar on the floor.",
     "It takes character to sit with all that cash and do nothing. I didn’t get to where I am by going after mediocre opportunities.",
-    "Take a simple idea, and take it seriously."
+    "Take a simple idea, and take it seriously.",
+    "Whenever you think something or some person is ruining your life, it’s you. A victimization mentality is so debilitating.",
+    "In my whole life, I have known no wise people … who didn’t read all the time. … You’d be amazed at how much Warren reads, at how much I read. My children laugh at me. They think I’m a book with a couple of legs sticking out.",
+    "We look for a horse with one chance in two of winning and which pays you three to one.",
+    "Knowing what you don’t know is more useful than being brilliant.",
+    "We have to have a special insight, or we’ll put it in the ‘too tough’ basket. All of you have to look for a special area of competency and focus on that.",
+    "You don’t have to be brilliant, only a little bit wiser than the other guys, on average, for a long, long, time.",
+    "Remember that reputation and integrity are your most valuable assets, and can be lost in a heartbeat.",
+    "Anytime anybody offers you anything with a big commission and a 200-page prospectus, don’t buy it. Occasionally, you’ll be wrong if you adopt ‘Munger’s Rule.’ However, over a lifetime, you’ll be a long way ahead, and you will miss a lot of unhappy experiences.",
+    "The best armor of old age is a well-spent life preceding it.",
+    "It’s not the bad ideas that do you in, but the good ones.",
+    "Acknowledging what you don’t know is the dawning of wisdom.",
+    "If you don’t allow for self-serving bias in the conduct of others, you are, again, a fool.",
+    "Everybody engaged in complex work needs colleagues. Just the discipline of having to put your thoughts in order with somebody else is a very useful thing.",
+    "I regard it as very unfair. But capitalism without failure is like religion without hell.",
+    "If you have competence, you know the edge. It wouldnt be a competence if you didnt know where the boundaries lie. Asking whether you’ve passed the boundary is a question that almost answers itself.",
+    'We both insist on a lot of time being available almost every day to just sit and think. That is very uncommon in American business. We read and think.',
+    "Mimicking the herd invites regression to the mean."
 ]
 
 let remainingQuotes = [...quotesList];
