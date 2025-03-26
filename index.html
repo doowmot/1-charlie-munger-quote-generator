@@ -7,25 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie Munger Quote Generator</title>
   </head>
+  
   <body>
     <div class="container">
       <h1>Charlie Munger Quote Generator</h1>
-      
       <div class="charlie-img-container">
         <img src="charlie-munger.jpg" alt="Charlie Munger" class="charlie-img" onerror="this.src='https://via.placeholder.com/150?text=Charlie+Munger'">
       </div>
       
       <div class="quote-container">
         <p id="quote-display">Click the button to generate a quote from Charlie Munger.</p>
-        <p class="author">- Charlie Munger</p>
       </div>
       
-      <button onclick="generateQuote()">Generate Quote</button>
+      <div class="buttons-container">
+        <button onclick="generateQuote()">
+        <ion-icon name="refresh-outline"></ion-icon>
+        Generate
+        </button>
+        
+        <button onclick="copyQuote()">
+        <ion-icon name="copy-outline"></ion-icon>
+        <span class="button-text">Copy</span>
+        </button>
+        
+        <button onclick="shareQuote()">
+        <ion-icon name="share-social-outline"></ion-icon>
+        Share
+        </button>
+      </div>
     </div>
 
-    <footer>Project 1/n - JavaScript Learning Journey</footer>
+    <footer><a href="https://x.com/doowmot" target="_blank">Created by @doowmot</a></footer>
     
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
 
