@@ -23,7 +23,7 @@ function generateQuote() {
     
     remainingQuotes.splice(randomPosition, 1);
     
-    document.getElementById("quote-display").innerHTML = selectedQuote;
+    document.getElementById("quote-display").innerHTML = `"${selectedQuote}"`;
 }
 
 function copyQuote() {
